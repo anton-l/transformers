@@ -47,9 +47,6 @@ if TYPE_CHECKING:
     from .configuration_clip import CLIP_PRETRAINED_CONFIG_ARCHIVE_MAP, ClipConfig
     from .tokenization_clip import ClipTokenizer
 
-    if is_tokenizers_available():
-        from .tokenization_clip_fast import ClipTokenizerFast
-
     if is_torch_available():
         from .modeling_clip import (
             CLIP_PRETRAINED_MODEL_ARCHIVE_LIST,
